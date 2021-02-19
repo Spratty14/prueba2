@@ -32,7 +32,7 @@ const storage = multer.diskStorage({
     }
 })
 app.use(session({
-    secret: 'secret',
+    secret: process.env.SESSION_SECRET,
     resave: true,
     saveUninitialized: true
 }))

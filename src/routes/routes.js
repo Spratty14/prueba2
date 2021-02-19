@@ -8,9 +8,9 @@ const User = require('../models/user')
 const { unlink } = require('fs-extra')
 const passport = require('passport')
 cloudinary.config({
-    cloud_name: 'hihn4nkd3',
-    api_key: 226848297916893,
-    api_secret: 's6QFVdKqlSzrYP0CJqjrXHPf7kM'
+    cloud_name: process.env.CLOUDINARY_NAME,//'hihn4nkd3'
+    api_key: process.env.CLOUDINARY_UR, //226848297916893,
+    api_secret: process.env.CLOUDINARY_API_SECRET//'s6QFVdKqlSzrYP0CJqjrXHPf7kM'
 })
 
 //functions
