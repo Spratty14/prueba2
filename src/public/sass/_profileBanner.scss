@@ -1,0 +1,41 @@
+.banner{
+    position: relative;
+    height: 100%;
+}
+.banner-img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    
+}
+.banner-profile{
+    position: absolute;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    width: 400px;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.banner-profile-img{
+    position: relative;
+    height: 100%;
+    width: 120px;
+}
+.profile-img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.banner-profile-description{
+    width: 260px;
+    height: 100%;
+}

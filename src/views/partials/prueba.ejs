@@ -1,0 +1,17 @@
+<div class="c-header blur-white">
+    <div class="c-header-content">
+        <ul class="c-header-nav">
+            <a class="c-nav-link" href="/">
+                <li class="c-nav-item">Home</li>
+            </a>
+            <% if(user) { %>
+                <a class="c-nav-link" href="/upload">
+                    <li class="c-nav-item">Upload</li>
+                </a>
+                <a class="c-nav-link" href="/logout">
+                    <li class="c-nav-item c-logout">Logout</li>
+                </a>
+            <% } %>
+        </ul>
+    </div>
+</div>

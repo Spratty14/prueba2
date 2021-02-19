@@ -1,0 +1,19 @@
+<div class="banner">
+    <a href="/banner/<%= user._id%>">
+        <div class="banner-img" style="background-image: url(<%= user.banner%>);"></div>
+    </a>
+    <div class="banner-profile rounded blur-white p-2">
+        <div class="banner-profile-img shadow">
+            <img class="profile-img rounded-lg" src="<%= user.profileImg%>" alt="">
+        </div>
+        <div class="banner-profile-description">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h3><%= user.username%></h3>
+                </div>
+                <div class="col-sm-12"><%= format(user.createdAt)%></div>
+                <div class="col-sm-12"></div>
+            </div>
+        </div>
+    </div>
+</div>

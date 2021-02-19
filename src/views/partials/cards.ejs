@@ -1,0 +1,33 @@
+<div class="card-columns">
+    <% images.forEach(function(image){ %>
+
+    <div class="card">
+        <a href="/imgView/<%= image._id%>">
+            <img class="card-img-top" src="<%= image.imageURL%>" alt="">
+        </a>
+        <div class="card-header">
+            <h4 class="card-title"><%= image.title%></h4>
+        </div>
+        <div class="card-body py-0 pl-2">
+            <ul class="list-inline p-0 m-0 d-flex" style="height: auto;">
+                <li class="list-inline-item"><img src="<%= image.ownerImg%>" style="height: 45px;width: 45px;" alt=""></li>
+                <li class="list-inline-item"><h6><%= image.owner%></h6></li>
+            </ul>
+        </div>
+        <% if(user){ %>
+            <div class="card-footer">
+            <% if(user.username == image.owner || user.email == 'admin@admin.com') { %>
+            <div class="row">
+                <div class="col-md-6 p-1">
+                    <a href="/edit/<%= image._id%>" type="button" class="btn btn-info w-100">Edit</a>
+                </div>
+                <div class="col-md-6 p-1">
+                    <a href="/delete/<%= image._id%>" type="button" class="btn btn-danger w-100">Delete</a>
+                </div>
+            </div>
+            <% } %>
+        </div>
+            <% } %>
+    </div>
+    <% }) %>
+</div>

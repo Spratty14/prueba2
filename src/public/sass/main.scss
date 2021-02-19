@@ -1,0 +1,42 @@
+//variables
+@import 'variables';
+
+
+
+@import 'header';
+@import 'index';
+@import 'profileBanner';
+
+
+//general settings
+
+    //cards
+.card-img-container{
+    position: relative;
+    top: 0;
+    bottom: 0;
+}
+.card-img-profile{
+    position: absolute;
+    height: 100%;
+    width: auto;
+}
+
+    //blur
+.blur-white{
+    background:rgba(192, 192, 192,0.6);
+    backdrop-filter: blur(6px);
+    
+}
+.blur-gradient{
+    background:linear-gradient(rgba(192, 192, 192,0.4), rgba(0, 0, 0, 0.01));
+    backdrop-filter: blur(0px);
+}
+.blur{
+    background:rgba(124, 124, 124, 0.1);
+    backdrop-filter: blur(6px);
+}
+.blur-dark{
+    background:rgba(39, 39, 39, 0.6);
+    backdrop-filter: blur(6px);
+}
